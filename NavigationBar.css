@@ -1,0 +1,407 @@
+﻿.azureml-nav {
+  font-family: "Segoe UI";
+  line-height: 0px;
+  padding: 0px 30px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  min-height: inherit;
+  background-color: #3c454f;
+  border: 0px;
+}
+.azureml-nav .navbar-brand {
+  height: 40px;
+  width: 270px;
+  padding: 10px 18px 0px 0px;
+  font-family: "Segoe UI light";
+  font-size: 17px;
+  color: #ffffff;
+  line-height: 18px;
+}
+.azureml-nav .navbar-brand:hover {
+  color: #ffffff;
+}
+.azureml-nav .navbar-text {
+  padding: 11px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.azureml-nav .navbar-nav > li > a {
+  padding: 11px;
+}
+.azureml-nav .machine-learning {
+  color: #71b1d1;
+}
+@media (max-width: 767px) {
+  .azureml-nav .open .forum-search-control,
+  .azureml-nav .open.user-info,
+  .azureml-nav .open .workspace-switcher-control {
+    background-color: #ffffff;
+  }
+  .azureml-nav .open .feedback-control,
+  .azureml-nav .open .search-control {
+    background-color: #495461;
+  }
+  .azureml-nav li.bar {
+    display: none;
+  }
+}
+.azureml-nav .container-fluid .site-links {
+  font-size: 14px;
+}
+.azureml-nav .container-fluid .site-links .bar {
+  width: 1px;
+  height: 16px;
+  border-left: 1px solid #888e94;
+  margin-top: 12px;
+  margin-right: 9px;
+}
+.azureml-nav .container-fluid .site-links li a {
+  color: #cccccc;
+  line-height: 18px;
+}
+.azureml-nav .container-fluid .site-links li a:hover {
+  color: #ffffff;
+}
+.azureml-nav .container-fluid .site-links li.active a {
+  color: #71b1d1;
+  background-color: inherit;
+}
+.azureml-nav .container-fluid .site-links li.active a:hover {
+  background-color: inherit;
+}
+.azureml-nav .container-fluid .site-links li.site-link-gallery {
+  float: left;
+}
+.azureml-nav .container-fluid .site-links li.site-link-preview {
+  float: left;
+}
+.azureml-nav .container-fluid .site-links li.site-link-preview a {
+  margin-top: 7px;
+  margin-left: -10px;
+  padding: 1px 3px;
+  color: #888;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.azureml-nav .navbar-right {
+  position: relative;
+}
+.azureml-nav .navbar-right .signInLink {
+  font-size: 12px;
+  color: #cccccc;
+  line-height: 18px;
+}
+.azureml-nav .navbar-right .signInLink:hover {
+  color: #ffffff;
+}
+.azureml-nav .navbar-right .open {
+  background-color: #495461;
+}
+.azureml-nav .navbar-right .open a.dropdown-toggle {
+  background-color: #495461;
+}
+.azureml-nav .navbar-right .dropdown {
+  position: static;
+  padding: 9px;
+}
+.azureml-nav .navbar-right .dropdown:hover {
+  background-color: #495461;
+}
+.azureml-nav .navbar-right .dropdown .icon {
+  padding: 11px;
+  background-image: url('../../Images/NavigationBar/icons-navbar-sprite.png');
+  background-repeat: no-repeat;
+  display: inline-block !important;
+}
+.azureml-nav .navbar-right .dropdown .dropdown-menu {
+  border: 0px;
+}
+@media (min-width: 767px) {
+  .azureml-nav .navbar-right .dropdown {
+    border-left: 1px solid #888e94;
+  }
+  .azureml-nav .navbar-right .dropdown:last-child {
+    border-right: 1px solid #888e94;
+  }
+}
+.azureml-nav .navbar-right .dropdown.user-info {
+  position: relative;
+  padding: 0px;
+}
+.azureml-nav .navbar-right .dropdown.user-info .profile-pic {
+  height: 40px;
+}
+.azureml-nav .navbar-right .dropdown.user-info > a.dropdown-toggle {
+  padding: 0px;
+}
+.azureml-nav .navbar-right .timer {
+  color: #cccccc;
+  line-height: 18px;
+  padding: 11px;
+  border-left: 0px;
+  font-family: 'Segoe UI Light';
+  font-size: 15px;
+  padding-right: 30px;
+}
+.azureml-nav .navbar-right .timer:hover {
+  color: #ffffff;
+}
+.azureml-nav .navbar-right .timer .count-down {
+  font-family: 'Segoe UI';
+  color: #ffffff;
+}
+.azureml-nav .navbar-right .help-search .icon {
+  background-position: 0px 0px;
+}
+.azureml-nav .navbar-right .feedback .icon {
+  background-position: -64px 0px;
+}
+.azureml-nav .navbar-right .workspace-switcher .icon {
+  background-position: -181px 0px;
+}
+.azureml-nav .navbar-right .forum-search .icon {
+  background-position: -32px 0px;
+}
+.azureml-nav .navbar-right .dropdown-menu {
+  width: 400px;
+  color: #cccccc;
+  background-color: #495461;
+}
+.azureml-nav .navbar-right .user-info-control,
+.azureml-nav .navbar-right .forum-search-control,
+.azureml-nav .navbar-right .workspace-switcher-control {
+  background-color: #ffffff;
+}
+.azureml-nav .navbar-right {
+  /*@media (max-width: 767px) {
+        .dropdown-menu .open .link.active li a {
+            background-color: @light-gray;
+        }
+
+        .link:first-child {
+            border-top: 0px;
+        }
+    }*/
+}
+.azureml-nav .navbar-right .dropdown .dropdown-menu .link {
+  border-top: 1px solid #cccccc;
+}
+.azureml-nav .navbar-right .dropdown .dropdown-menu .link a {
+  font-size: 14px;
+  color: #333333;
+  line-height: 18px;
+  padding: 0px;
+}
+.azureml-nav .navbar-right .dropdown .dropdown-menu .link a:hover {
+  color: #333333;
+  background-color: #eeeeee;
+}
+.azureml-nav .navbar-right .dropdown .dropdown-menu .link .centering-div {
+  height: 40px;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 16px;
+}
+.azureml-nav .navbar-right .dropdown .dropdown-menu .link .centering-div span {
+  display: block;
+}
+.azureml-nav .navbar-right .dropdown .dropdown-menu .link.active a {
+  background-color: #cccccc;
+}
+.azureml-nav .navbar-right .dropdown .dropdown-menu .link:first-child {
+  border-top: 0px;
+}
+.azureml-nav .navbar-right .user-info-control {
+  width: auto;
+}
+.azureml-nav .navbar-right .user-info-control .dropdown-header {
+  padding: 3px 16px;
+}
+.azureml-nav .navbar-right {
+  /* jQuery-UI Styles for help suggestions*/
+}
+.azureml-nav .navbar-right .help-search-control {
+  padding: 15px;
+}
+.azureml-nav .navbar-right .help-search-control .search-input {
+  text-align: left;
+  width: 100%;
+  padding-left: 11px;
+  padding-top: 10px;
+  border-radius: 0px;
+}
+.azureml-nav .navbar-right .help-search-control .icon {
+  padding: 11px;
+  background-image: url('../../Images/NavigationBar/icons-navbar-sprite.png');
+  vertical-align: middle;
+  display: table-cell;
+  background-position: -154px 4px;
+}
+.azureml-nav .navbar-right .help-search-control .search {
+  background-color: #8cc63f;
+  border-radius: 0px;
+  border: 0px;
+}
+.azureml-nav .navbar-right .help-search-control .results {
+  position: relative;
+  line-height: 18px;
+  display: none;
+  background-color: #ffffff;
+  overflow: auto;
+  color: #333333;
+}
+.azureml-nav .navbar-right .help-search-control .results .closeButton {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 10px 15px 0px 0px;
+  cursor: pointer;
+  color: #cccccc;
+  font-weight: bold;
+  z-index: 1;
+}
+.azureml-nav .navbar-right .help-search-control .results .closeButton:hover {
+  color: #495461;
+}
+.azureml-nav .navbar-right .help-search-control .results .header {
+  padding: 10px 15px 0px 15px;
+}
+.azureml-nav .navbar-right .help-search-control .results .empty {
+  display: none;
+  line-height: 18px;
+  padding: 10px 0px 0px 15px;
+  border-top: 1px solid black;
+  margin-top: 10px;
+}
+.azureml-nav .navbar-right .help-search-control .results .searchTerm {
+  font-weight: bold;
+}
+.azureml-nav .navbar-right .help-search-control .help-links {
+  line-height: 1.2;
+  margin-top: 10px;
+  text-align: right;
+  color: #cccccc;
+}
+.azureml-nav .navbar-right .help-search-control .help-links a {
+  color: #cccccc;
+  text-decoration: none;
+}
+.azureml-nav .navbar-right .help-search-control .help-links a:hover {
+  color: #ffffff;
+}
+.azureml-nav .navbar-right .ui-autocomplete {
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  min-width: 160px;
+  padding: 4px 0;
+  margin: 10px 0 0 0;
+  list-style: none;
+  background-color: #ffffff;
+  border-color: 1px solid #cccccc;
+  border-radius: 0px;
+  position: static;
+}
+.azureml-nav .navbar-right .ui-autocomplete .ui-menu-item > a.ui-corner-all {
+  display: block;
+  padding: 3px 15px;
+  clear: both;
+  font-weight: normal;
+  line-height: 18px;
+}
+.azureml-nav .navbar-right .ui-autocomplete .ui-menu-item a.ui-state-hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #cccccc;
+  border-radius: 0px;
+  border: 0px;
+  background-image: none;
+  margin: 0px;
+}
+.azureml-nav .navbar-right .ui-autocomplete .ui-menu .ui-menu-item {
+  float: none;
+}
+.azureml-nav .navbar-right .ui-helper-hidden-accessible {
+  display: none;
+}
+/* Feedback Control*/
+.azureml-nav .navbar-right .feedback-control {
+  padding: 15px;
+}
+.azureml-nav .navbar-right .feedback-control .feedback-type-controls .btn {
+  padding-left: 0px;
+  padding-right: 15px;
+  color: #cccccc;
+}
+.azureml-nav .navbar-right .feedback-control .feedback-type-controls .btn .icon {
+  display: inline-block;
+  padding: 11px;
+  background-image: url('../../Images/NavigationBar/icons-navbar-sprite.png');
+  vertical-align: middle;
+}
+.azureml-nav .navbar-right .feedback-control .feedback-type-controls .btn .content {
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 10px;
+}
+.azureml-nav .navbar-right .feedback-control .feedback-type-controls .smile .icon {
+  background-position: -64px -32px;
+}
+.azureml-nav .navbar-right .feedback-control .feedback-type-controls .frown .icon {
+  background-position: -96px -32px;
+}
+.azureml-nav .navbar-right .feedback-control .feedback-type-controls .smile.active,
+.azureml-nav .navbar-right .feedback-control .feedback-type-controls .smile:hover {
+  color: #ffffff;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.azureml-nav .navbar-right .feedback-control .feedback-type-controls .smile.active .icon,
+.azureml-nav .navbar-right .feedback-control .feedback-type-controls .smile:hover .icon {
+  background-position: -64px 0px;
+}
+.azureml-nav .navbar-right .feedback-control .feedback-type-controls .frown.active,
+.azureml-nav .navbar-right .feedback-control .feedback-type-controls .frown:hover {
+  color: #ffffff;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.azureml-nav .navbar-right .feedback-control .feedback-type-controls .frown.active .icon,
+.azureml-nav .navbar-right .feedback-control .feedback-type-controls .frown:hover .icon {
+  background-position: -96px 0px;
+}
+.azureml-nav .navbar-right .feedback-control .feedback-type-controls .prompt {
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 18px;
+}
+.azureml-nav .navbar-right .feedback-control .feedback-input {
+  position: relative;
+  margin: 7px 0px;
+}
+.azureml-nav .navbar-right .feedback-control .feedback-input .text-input {
+  width: 100%;
+  height: 150px;
+  padding: 9px;
+  line-height: 18px;
+  color: #333333;
+}
+.azureml-nav .navbar-right .feedback-control .bottom-controls .character-count {
+  display: inline-block;
+  margin-top: 8px;
+  color: #cccccc;
+}
+.azureml-nav .navbar-right .feedback-control .bottom-controls .submit {
+  float: right;
+  background-color: #8cc63f;
+  height: 30px;
+  color: #ffffff;
+  border-radius: 0px;
+  margin-top: 8px;
+  border: 0px;
+}
+.azureml-nav .navbar-right .feedback-control .bottom-controls .submit.disabled {
+  background-color: #999999;
+  color: #666666;
+}
