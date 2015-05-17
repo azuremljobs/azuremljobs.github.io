@@ -10,12 +10,12 @@
 }
 .azureml-nav .navbar-brand {
   height: 40px;
-  width: 270px;
+  width: 240px;
   padding: 10px 18px 0px 0px;
   font-family: "Segoe UI light";
   font-size: 17px;
   color: #ffffff;
-  line-height: 18px;
+  line-height: 28px;
 }
 .azureml-nav .navbar-brand:hover {
   color: #ffffff;
