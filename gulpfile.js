@@ -16,8 +16,8 @@ var _ = require("lodash"),
 
 var srcScss = "./styles.scss",
   srcCss = "./NavigationBar.css",
-  srcStatic = "./*.+(html|jpg|png|gif|svg)",
-  outputCss = "./styles",
+  srcStatic = "./**/*.+(html|jpg|png|gif|svg)",
+  outputCss = "./css",
   cssPipe;
 
 gulp.task("browser-sync", function() {
@@ -57,7 +57,16 @@ gulp.task("css", function () {
 
 gulp.task("scss", function () {
     return gulp.src(srcScss)
-        .pipe(sass())
+        .pipe(sass({
+          style: 'nested',
+          includePaths: [
+          './',
+          './bower_components/bootstrap-sass/assets/stylesheets/'
+          ]
+        })
+        .on('error', function(error){
+          console.log(error);
+        }))
         .pipe(cssPipe());
 });
 
