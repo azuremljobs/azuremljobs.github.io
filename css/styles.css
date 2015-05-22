@@ -5045,7 +5045,6 @@ h3 {
 .azureml-nav {
   font-family: "Segoe UI";
   line-height: 0px;
-  padding: 0px 30px;
   border-radius: 0px;
   margin-bottom: 0px;
   min-height: inherit;
@@ -5053,12 +5052,12 @@ h3 {
   border: 0px; }
   .azureml-nav .navbar-brand {
     height: 40px;
-    width: 255px;
-    padding: 10px 3px 0px 0px;
+    margin-right: 11px;
+    padding: 0;
     font-family: "Segoe UI light";
     font-size: 17px;
     color: #ffffff;
-    line-height: 18px; }
+    line-height: 40px; }
     .azureml-nav .navbar-brand:hover {
       color: #ffffff; }
   .azureml-nav .navbar-text {
@@ -5072,11 +5071,10 @@ h3 {
   .azureml-nav .site-links {
     font-size: 14px; }
     .azureml-nav .site-links .bar {
-      width: 1px;
+      width: 0;
       height: 16px;
       border-left: 1px solid #888e94;
-      margin-top: 12px;
-      margin-right: 9px; }
+      margin: 12px 9px; }
     .azureml-nav .site-links a {
       color: #cccccc;
       line-height: 18px; }
@@ -5100,8 +5098,15 @@ h3 {
         text-transform: uppercase; }
 
 @media (max-width: 768px) {
-  .azureml-nav .site-links .bar {
-    display: none; } }
+  .azureml-nav {
+    padding: 0; }
+    .azureml-nav .navbar-brand {
+      margin-left: 5px;
+      line-height: 50px; }
+    .azureml-nav .site-links .bar {
+      display: none; }
+  .navbar-toggle {
+    margin-right: 5px; } }
 
 .buzyIndicator {
   pointer-events: none;
