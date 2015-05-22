@@ -15,7 +15,6 @@ var _ = require("lodash"),
   reload = browserSync.reload;
 
 var srcScss = "./styles.scss",
-  srcCss = "./NavigationBar.css",
   srcStatic = "./**/*.+(html|jpg|png|gif|svg)",
   outputCss = "./css",
   cssPipe;
@@ -39,35 +38,30 @@ gulp.task("browser-sync", function() {
 });
 
 cssPipe = lazypipe()
-    .pipe(autoprefixer, "{ browsers: ['last 2 version', 'ie 9', '> 5%'], onError: function (err) { console.log(err)} }")
-    .pipe(gulp.dest, outputCss)
-    .pipe(rename, {
-              suffix: ".min"
-          })
-    .pipe(minifycss)
-    .pipe(gulp.dest, outputCss)
-    .pipe(reload, {
-              stream: true
-          });
+  .pipe(autoprefixer, "{ browsers: ['last 2 version', 'ie 9', '> 5%'], onError: function (err) { console.log(err)} }")
+  .pipe(gulp.dest, outputCss)
+  .pipe(rename, {
+    suffix: ".min"
+  })
+  .pipe(minifycss)
+  .pipe(gulp.dest, outputCss)
+  .pipe(reload, {
+    stream: true
+  });
 
-gulp.task("css", function () {
-    return gulp.src(srcCss)
-        .pipe(cssPipe());
-});
-
-gulp.task("scss", function () {
-    return gulp.src(srcScss)
-        .pipe(sass({
-          style: 'nested',
-          includePaths: [
+gulp.task("scss", function() {
+  return gulp.src(srcScss)
+    .pipe(sass({
+        style: 'nested',
+        includePaths: [
           './',
           './bower_components/bootstrap-sass/assets/stylesheets/'
-          ]
-        })
-        .on('error', function(error){
-          console.log(error);
-        }))
-        .pipe(cssPipe());
+        ]
+      })
+      .on('error', function(error) {
+        console.log(error);
+      }))
+    .pipe(cssPipe());
 });
 
 gulp.task("clean", function(cb) {
@@ -75,11 +69,10 @@ gulp.task("clean", function(cb) {
 });
 
 gulp.task("build", ["clean"], function() {
-  gulp.start("css", "scss");
+  gulp.start("scss");
 });
 
 gulp.task("watch", ["browser-sync"], function() {
-  gulp.watch(srcCss, ["css"]);
   gulp.watch(srcScss, ["scss"]);
   gulp.watch(srcStatic, [reload]);
 });
