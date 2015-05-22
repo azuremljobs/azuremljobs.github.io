@@ -73,7 +73,7 @@ gulp.task("build", ["clean"], function() {
 });
 
 gulp.task("watch", ["browser-sync"], function() {
-  gulp.watch(srcScss, ["scss"]);
+  gulp.watch("./*.scss", ["scss"]);
   gulp.watch(srcStatic, [reload]);
 });
 

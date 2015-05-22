@@ -22,3 +22,20 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
+table, th, td {
+  border: 0px;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+.fixedheader {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+.content {
+  padding: 15px;
+}
+
