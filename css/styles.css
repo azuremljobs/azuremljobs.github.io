@@ -5137,4 +5137,9 @@ th, td {
   top: 0px; }
 
 .content {
-  padding: 15px; }
+  margin: 15px; }
+  .fixedheader + .content {
+    margin-top: 50px; }
+  .content + .content {
+    border-top: 1px solid #eeeeee;
+    margin-top: 20px; }
