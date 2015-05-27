@@ -2,49 +2,58 @@
 @import "fontIcons.scss";
 @import "NavigationBar.scss";
 
-.buzyIndicator {
-  pointer-events: none;
-  background-image: url("/images/spinner-md.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-table, th, td {
-  border: 0px;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-}
 .fixedheader {
   width: 100%;
   position: fixed;
   top: 0px;
 }
-.content {
-  margin: 15px;
 
-  .fixedheader + & {
-    margin-top: 50px
+.cover {
+  width: 100vw;
+  height: 475px;
+  padding-top: 50px;
+  background: url(/images/cover.png) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  h1 {
+    font-size: 76px;
+    color: #ffffff;
+    font-style: normal;
   }
+}
 
-  .content + & {
-    border-top: 1px solid #eeeeee;
-    margin-top: 20px;
+.content {
+  font-family: 'Segoe UI';
+  font-size: 16px;
+  color: #3d3d3d;
+  backgroud: #ffffff;
+  line-height: 24.4px;
+  &:nth-child(2n){
+    background: #f4f4f4;
+  }
+  h1, h2, h3 {
+    margin: 45px 0 28px 0;
+    color: #28abe0;
+    font-weight: bold;
+  }
+  .jobs {
+    margin: 32px 0 40px 0;
+  }
+  .job-title {
+    font-family: "Segoe UI Semibold";
+    font-size: 16px;
+    color: #3d3d3d;
+    line-height: 37px;
+  }
+  .job-links {
+    font-size: 0;
+    a {
+      margin: 5px;
+      border: 0;
+      border-radius: 0;
+      color: #ffffff;
+      background: #28a8e0;
+    }
   }
 }
 

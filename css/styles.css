@@ -5108,38 +5108,47 @@ h3 {
   .navbar-toggle {
     margin-right: 5px; } }
 
-.buzyIndicator {
-  pointer-events: none;
-  background-image: url("/images/spinner-md.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-
-table, th, td {
-  border: 0px;
-  border-collapse: collapse; }
-
-th, td {
-  padding: 5px; }
-
 .fixedheader {
   width: 100%;
   position: fixed;
   top: 0px; }
 
+.cover {
+  width: 100vw;
+  height: 475px;
+  padding-top: 50px;
+  background: url(/images/cover.png) no-repeat center center;
+  background-size: cover;
+  text-align: center; }
+  .cover h1 {
+    font-size: 76px;
+    color: #ffffff;
+    font-style: normal; }
+
 .content {
-  margin: 15px; }
-  .fixedheader + .content {
-    margin-top: 50px; }
-  .content + .content {
-    border-top: 1px solid #eeeeee;
-    margin-top: 20px; }
+  font-family: 'Segoe UI';
+  font-size: 16px;
+  color: #3d3d3d;
+  backgroud: #ffffff;
+  line-height: 24.4px; }
+  .content:nth-child(2n) {
+    background: #f4f4f4; }
+  .content h1, .content h2, .content h3 {
+    margin: 45px 0 28px 0;
+    color: #28abe0;
+    font-weight: bold; }
+  .content .jobs {
+    margin: 32px 0 40px 0; }
+  .content .job-title {
+    font-family: "Segoe UI Semibold";
+    font-size: 16px;
+    color: #3d3d3d;
+    line-height: 37px; }
+  .content .job-links {
+    font-size: 0; }
+    .content .job-links a {
+      margin: 5px;
+      border: 0;
+      border-radius: 0;
+      color: #ffffff;
+      background: #28a8e0; }
