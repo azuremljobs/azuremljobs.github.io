@@ -5051,33 +5051,28 @@ h3 {
   background-color: #3c454f;
   border: 0px; }
   .azureml-nav .navbar-brand {
-    height: 40px;
+    height: 50px;
     margin-right: 11px;
     padding: 0;
     font-family: "Segoe UI light";
-    font-size: 17px;
+    font-size: 19.7px;
     color: #ffffff;
-    line-height: 40px; }
-    .azureml-nav .navbar-brand:hover {
-      color: #ffffff; }
+    line-height: 50px; }
+    .azureml-nav .navbar-brand span {
+      color: #2ba8e0; }
   .azureml-nav .navbar-text {
     padding: 11px;
     margin-top: 0px;
     margin-bottom: 0px; }
-  .azureml-nav .navbar-nav > li > a {
-    padding: 11px; }
   .azureml-nav .machine-learning {
     color: #71b1d1; }
   .azureml-nav .site-links {
-    font-size: 14px; }
-    .azureml-nav .site-links .bar {
-      width: 0;
-      height: 16px;
-      border-left: 1px solid #888e94;
-      margin: 12px 9px; }
+    font-size: 15.7px; }
+    .azureml-nav .site-links .site-link {
+      margin: 0 10px; }
     .azureml-nav .site-links a {
-      color: #cccccc;
-      line-height: 18px; }
+      padding: 0;
+      line-height: 50px; }
       .azureml-nav .site-links a:hover {
         color: #ffffff; }
     .azureml-nav .site-links li.active a {
@@ -5085,17 +5080,6 @@ h3 {
       background-color: inherit; }
       .azureml-nav .site-links li.active a:hover {
         background-color: inherit; }
-    .azureml-nav .site-links li.site-link-gallery {
-      float: left; }
-    .azureml-nav .site-links li.site-link-preview {
-      float: left; }
-      .azureml-nav .site-links li.site-link-preview a {
-        margin-top: 7px;
-        margin-left: -10px;
-        padding: 1px 3px;
-        color: #888;
-        font-size: 10px;
-        text-transform: uppercase; }
 
 @media (max-width: 768px) {
   .azureml-nav {
@@ -5103,15 +5087,14 @@ h3 {
     .azureml-nav .navbar-brand {
       margin-left: 5px;
       line-height: 50px; }
-    .azureml-nav .site-links .bar {
-      display: none; }
   .navbar-toggle {
     margin-right: 5px; } }
 
 .fixedheader {
   width: 100%;
   position: fixed;
-  top: 0px; }
+  top: 0px;
+  z-index: 1; }
 
 .cover {
   width: 100vw;
@@ -5121,6 +5104,7 @@ h3 {
   background-size: cover;
   text-align: center; }
   .cover h1 {
+    margin: 0 15px;
     font-size: 76px;
     color: #ffffff;
     font-style: normal; }
@@ -5139,6 +5123,8 @@ h3 {
     font-weight: bold; }
   .content .jobs {
     margin: 32px 0 40px 0; }
+    .content .jobs .row {
+      margin: 10px 0; }
   .content .job-title {
     font-family: "Segoe UI Semibold";
     font-size: 16px;

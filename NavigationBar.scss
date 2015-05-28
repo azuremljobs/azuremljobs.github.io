@@ -8,15 +8,15 @@
   border: 0px;
 
   .navbar-brand {
-    height: 40px;
+    height: 50px;
     margin-right: 11px;
     padding: 0;
     font-family: "Segoe UI light";
-    font-size: 17px;
+    font-size: 19.7px;
     color: #ffffff;
-    line-height: 40px;
-    &:hover {
-      color: #ffffff;
+    line-height: 50px;
+    span {
+      color: #2ba8e0;
     }
   }
 
@@ -26,27 +26,21 @@
     margin-bottom: 0px;
   }
 
-  .navbar-nav > li > a {
-    padding: 11px;
-  }
-
   .machine-learning {
     color: #71b1d1;
   }
 
   .site-links {
-    font-size: 14px;
+    font-size: 15.7px;
 
-    .bar {
-      width: 0;
-      height: 16px;
-      border-left: 1px solid #888e94;
-      margin: 12px 9px;
+    .site-link {
+      margin: 0 10px;
     }
 
     a {
-      color: #cccccc;
-      line-height: 18px;
+      padding: 0;
+      line-height: 50px;
+
       &:hover {
       color: #ffffff;
       }
@@ -59,22 +53,6 @@
         background-color: inherit;
       }
     }
-
-    li.site-link-gallery {
-      float: left;
-    }
-    li.site-link-preview {
-      float: left;
-      a {
-        margin-top: 7px;
-        margin-left: -10px;
-        padding: 1px 3px;
-        color: #888;
-        font-size: 10px;
-        text-transform: uppercase;
-      }
-    }
-
   }
 }
 
@@ -85,10 +63,6 @@
     .navbar-brand{
       margin-left: 5px;
       line-height: 50px;
-    }
-
-    .site-links .bar{
-      display: none;
     }
   }
   .navbar-toggle {
