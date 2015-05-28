@@ -5090,12 +5090,6 @@ h3 {
   .navbar-toggle {
     margin-right: 5px; } }
 
-.fixedheader {
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  z-index: 1; }
-
 .cover {
   width: 100vw;
   height: 475px;
@@ -5121,6 +5115,13 @@ h3 {
     margin: 45px 0 28px 0;
     color: #28abe0;
     font-weight: bold; }
+  .content .read-more {
+    display: none; }
+    .content .read-more.collapsed {
+      display: inline;
+      text-decoration: none;
+      color: #28abe0;
+      font-weight: bold; }
   .content .jobs {
     margin: 32px 0 40px 0; }
     .content .jobs .row {
