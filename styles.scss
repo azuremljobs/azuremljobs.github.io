@@ -1,0 +1,66 @@
+﻿@import "bootstrap";
+@import "fontIcons.scss";
+@import "NavigationBar.scss";
+
+.cover {
+  width: 100vw;
+  height: 475px;
+  padding-top: 50px;
+  background: url(/images/cover.png) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  h1 {
+    margin: 0 15px;
+    font-size: 76px;
+    color: #ffffff;
+    font-style: normal;
+  }
+}
+
+.content {
+  font-family: 'Segoe UI';
+  font-size: 16px;
+  color: #3d3d3d;
+  backgroud: #ffffff;
+  line-height: 24.4px;
+  &:nth-child(2n){
+    background: #f4f4f4;
+  }
+  h1, h2, h3 {
+    margin: 45px 0 28px 0;
+    color: #28abe0;
+    font-weight: bold;
+  }
+  .read-more {
+    display: none;
+    &.collapsed {
+      display: inline;
+      text-decoration: none;
+      color: #28abe0;
+      font-weight: bold;
+    }
+  }
+  .jobs {
+    margin: 32px 0 40px 0;
+    .row{
+      margin: 10px 0;
+    }
+  }
+  .job-title {
+    font-family: "Segoe UI Semibold";
+    font-size: 16px;
+    color: #3d3d3d;
+    line-height: 37px;
+  }
+  .job-links {
+    font-size: 0;
+    a {
+      margin: 5px;
+      border: 0;
+      border-radius: 0;
+      color: #ffffff;
+      background: #28a8e0;
+    }
+  }
+}
+

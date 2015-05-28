@@ -1,0 +1,71 @@
+﻿.azureml-nav {
+  font-family: "Segoe UI";
+  line-height: 0px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  min-height: inherit;
+  background-color: #3c454f;
+  border: 0px;
+
+  .navbar-brand {
+    height: 50px;
+    margin-right: 11px;
+    padding: 0;
+    font-family: "Segoe UI light";
+    font-size: 19.7px;
+    color: #ffffff;
+    line-height: 50px;
+    span {
+      color: #2ba8e0;
+    }
+  }
+
+  .navbar-text {
+    padding: 11px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .machine-learning {
+    color: #71b1d1;
+  }
+
+  .site-links {
+    font-size: 15.7px;
+
+    .site-link {
+      margin: 0 10px;
+    }
+
+    a {
+      padding: 0;
+      line-height: 50px;
+
+      &:hover {
+      color: #ffffff;
+      }
+    }
+
+    li.active a {
+      color: #71b1d1;
+      background-color: inherit;
+      &:hover {
+        background-color: inherit;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .azureml-nav {
+    padding: 0;
+
+    .navbar-brand{
+      margin-left: 5px;
+      line-height: 50px;
+    }
+  }
+  .navbar-toggle {
+    margin-right: 5px;
+  }
+}
